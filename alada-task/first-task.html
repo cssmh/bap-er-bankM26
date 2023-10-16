@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double and Triple</title>
+</head>
+
+<body>
+    <section>
+        <input id="get-number" type="text" placeholder="Type a number">
+        <button id="btn-double">double</button>
+        <button id="btn-triple">triple</button>
+        <br>
+        <p id="result"></p>
+    </section>
+    <script>
+        document.getElementById('btn-double').addEventListener('click', function () {
+            const doubleGot = document.getElementById('get-number');
+            const finalDouble = document.getElementById('result');
+
+            var inputValue = parseFloat(doubleGot.value);
+            if (isNaN(inputValue)) {
+                alert("Enter number");
+            }
+            else {
+                finalDouble.innerText = 'Double '+inputValue * 2;
+            }
+        })
+        document.getElementById('btn-triple').addEventListener('click', function () {
+            const tripleGot = document.getElementById('get-number');
+            const finalTriple = document.getElementById('result');
+
+            var inputValue = parseFloat(tripleGot.value);
+            if (isNaN(inputValue)) {
+                alert("Enter number");
+            }
+            else {
+                finalTriple.innerText = 'Triple '+inputValue * 3;
+            }
+        })
+    </script>
+</body>
+
+</html>
