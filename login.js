@@ -5,10 +5,10 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     
     const passwordField = document.getElementById('user-password').value;
     const password = passwordField;
-    if(email === 'sontan@gmail.com' && password === 'sontan'){
+    if(email === 'baba@gmail.com' && password === 'baba'){
         window.location.href = 'bank.html';
     }
     else{
-        alert('Thik moto de');
+        alert('Wrong Email password dico!! Eta tomar baap er account na');
     }
 })
